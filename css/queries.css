@@ -1,0 +1,296 @@
+/*******************************************
+For Small Laptops (max-width:1355px)
+******************************************************/
+@media (max-width: 84em) {
+    .hero {
+        max-width: 1200em;
+    }
+
+
+    .headingPrimary {
+     font-size: 4.4rem;
+     }
+
+    .gallery {
+     grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+/*******************************************
+For Landscapes Tablets (max-width:1200px)
+*******************************************/
+
+@media (max-width: 76em) {
+    html {
+        font-size: 56.2%;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+
+    }
+
+    .mainNavList  {
+        gap: 2.8rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .headingSecondary {
+        font-size: 3.6rem;
+    }
+
+    .headingTertiary {
+        font-size: 2.4rem;
+    }
+
+    
+    .testimonialContainer {
+        padding: 9.6rem 3.2rem;
+    }
+}
+
+/*******************************************
+For Portrait Tablets (max-width:940px)
+*******************************************/
+@media (max-width:59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        height: 2.4rem;
+    }
+
+    .btnMobileNav {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .mainNav {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*StepsforHiddenanElement*//*1.Opacity*/
+        opacity: 0;
+        /*2Pointer-event*/
+        pointer-events: none;
+        /*Visibility*/
+        visibility: hidden;
+        transition: all 1s ease-in;
+        transform: translateX();
+        -webkit-transform: translateX();
+        -moz-transform: translateX();
+        -ms-transform: translateX();
+        -o-transform: translateX();
+}
+
+    .navOpen .mainNav  {
+     opacity: 1;
+     pointer-events: auto;
+     visibility: visible;
+     transform: translateX(0);
+     -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+}
+
+    .mainNavLink:link, .mainNavLink:visited {
+        font-size: 2.4rem;
+    }
+
+    .navOpen .iconMobileNav[name="menu"] {
+        display: none;
+    }
+
+    .navOpen .iconMobileNav[name="close"] {
+        display: block;
+    }
+
+    .mainNavList {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .heroTextBox, .heroImgBox {
+        text-align: center;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+
+    .deliveredMeals  {
+        margin-top: 3.2rem;
+        justify-content: center;
+    }
+
+    .stepNumber {
+        font-size: 7.4rem;
+    }
+
+    .mealContents  {
+        padding:  2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .sectionTestimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .pricingPlanComplete {
+        padding: 3.2rem;
+    }
+
+    .pricingPlanStarter {
+        padding: 3 rem;
+    }
+
+    .CTA {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .CTAForm {
+        grid-template-columns: 1fr;
+    }
+
+    .btnForm {
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+           
+}
+
+/*******************************************
+For Small Tabelets (max-width:704px)
+*******************************************/
+@media (max-width: 44em) {
+
+    .headingSecondary {
+        margin-bottom: 4.8rem;
+
+    }
+
+    .grid-3-cols, .grid-4--cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diet {
+        grid-column: 1/ -1;
+        justify-content: center;
+    }
+
+    .princingPlan {
+        width: 100%;
+    }
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .navCol {
+        grid-column: span 2;
+        margin-top: 3.2rem;
+    }
+
+    .logoCol, .addressCol {
+        grid-column: span 3;
+
+    }
+    
+    
+}
+
+
+/*******************************************
+For Small Phone (max-width:550px)
+*******************************************/
+@media (max-width: 34em) {
+    .grid-2-cols, .grid-3-cols, .grid-4--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionHero{
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .btn,.btn:link, .btn:visited  {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .heroImage {
+        width: 80%;
+    }
+
+    .logo img {
+        height: 1.2rem;
+    }
+
+    .stepTextBox {
+        transform: translateY(-2.4rem);
+    }
+    
+    .rowOne {
+        grid-row: 1;
+    }
+
+    .rowFive {
+        grid-row: 5;
+    }
+    
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .CTA {
+        grid-template-columns: 1fr;
+    }
+
+    .CTATextBox {
+        padding: 3.2rem;
+    }
+
+    .CTAImgBox {
+        height: 32rem;
+        grid-row: 1;
+    }
+
+}
+
+
+
